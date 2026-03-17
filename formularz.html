@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="icon" href="images/logo.jpg" type="image/jpg">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+</head>
+<body class="bg-dark bg-gradient text-light">
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  <div class="container-fluid">
+    <h4>
+      <img src="images/logo.jpg" alt="logo" width="30" class="me-2">
+    <a class="navbar-brand" href="index.html">FirmaKomputerowa</a>
+    </h4>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Glowna</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link active" href="formularz.html">Formularz</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="informacje.html">Informacje</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="mb-4 py-3 fw-bold text-center bg-primary text-white">Formularz przyjecia do pracy</h1>
+            <form action="">
+            <div class="form-check mb-3 mt-3 fs-4 form-control bg-light card-shadow p-4 col-md-6 text-dark container card-body rounded-4">
+                <label for="imie" class="form-label" >Jak sie nazywasz? </label>
+                <input type="text" class="form-control" id="imie" placeholder="Podaj swoje imie i nazwisko">
+            </div>
+            <div class="form-check mb-3 mt-3 fs-4 form-control bg-light card-shadow p-4 col-md-6 text-dark container rounded-4 card-body">
+                    <label for="wiek" class="form-label">Ile masz lat? </label>
+                    <input type="number" class="form-control" id="wiek" placeholder="Podaj swoj wiek">
+            </div>
+            <div class="form-check mb-3 fs-4 form-control bg-light card-shadow p-4 col-md-6 text-dark container rounded-4 card-body">
+                    <label for="plec" class="form-check-label">Podaj plec: </label><br>
+                    <input type="radio" id="plec" name="plec"> Mezczyzna<br>
+                    <input type="radio" id="plec" name="plec"> Kobieta<br>
+            </div>
+            <div class="form-check mb-3 fs-4 form-control bg-light card-shadow p-4 col-md-6 text-dark container rounded-4 card-body">
+                    <label for="wyksztalcenie" class="form-label">Jakie posiadasz wyksztalcenie? </label><br>
+                    <input type="radio" name="wyksztalcenie"> Podstawowe <br>
+                    <input type="radio" name="wyksztalcenie"> Srednie<br>
+                    <input type="radio" name="wyksztalcenie"> Wyzsze<br>
+                    <input type="radio" name="wyksztalcenie"> Inne<br>
+            </div>
+            <div class="form-check mb-3 fs-4 form-control bg-light card-shadow p-4 col-md-6 text-dark container rounded-4 card-body">
+                        <label for="godziny" class="form-label">Wybierz preferowane godziny pracy</label>
+                        <select id="godziny" class="form-select">
+                            <option>8:00 - 16:00</option>
+                            <option>9:00 - 17:00</option>
+                            <option>22:00 - 6:00</option>
+                            <option>Elastyczne</option>
+                        </select>
+            </div>
+            <div class="form-check mb-3 fs-4 form-control bg-light p-4 col-md-6 text-dark container rounded-4">
+                <label class="form-label">Z czym jestes zaznajomiony?</label><br>
+                <input type="checkbox"> HTML <br>
+                <input type="checkbox"> CSS <br>
+                <input type="checkbox"> JavaScript <br>
+                <input type="checkbox"> Bootstrap <br>
+                <input type="checkbox"> React <br>
+                </div>
+            <div class="form-check mb-3 fs-4 form-control bg-light card-shadow p-4 col-md-6 text-dark container rounded-4 card-body">
+                <label class="form-label">Dlaczego chcesz pracowac w naszej firmie?</label>
+                <textarea class="form-control" rows="5" placeholder="Napisz kilka slow o sobie"></textarea>
+            </div>
+                <h1 class="mb-4 py-3 fw-bold text-center bg-primary text-white">Dane Kontaktowe</h1>
+                <div class="form-check mb-3 fs-4 form-control bg-light card-shadow p-4 col-md-6 text-dark container rounded-4 card-body">
+                <label for="email" class="form-label">Kontakt e-mail: </label>
+                <input type="email" id="email" class="form-control" placeholder="Podaj adres e-mail"required>
+            </div>
+            <div class="form-check mb-3 fs-4 form-control bg-light card-shadow p-4 col-md-6 text-dark container rounded-4 card-body">
+                <label for="tel" class="form-label">Numer telefonu: </label>
+                <input type="tel" id="tel" class="form-control" placeholder="Podaj numer telefonu" required>
+            </div>
+            <div class="text-center mt-4 mb-4">
+                <button type="button" class="btn btn-success btn-lg" onclick="alert('Formularz został przesłany!')">Zakoncz</button>
+            </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
